@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--黄金延期-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/quotes_layout_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/quotes_layout_2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/gold_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#60666666"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/title1"
+            app:layout_constraintRight_toRightOf="@id/title1"
+            app:layout_constraintTop_toBottomOf="@id/title1" />
+
+        <TextView
+            android:id="@+id/gold_extension_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.5dp"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="19sp"
+            app:layout_constraintLeft_toLeftOf="@id/gold_extension"
+            app:layout_constraintRight_toRightOf="@id/gold_extension"
+            app:layout_constraintTop_toBottomOf="@id/gold_extension" />
+
+        <TextView
+            android:id="@+id/gold_extension_gain1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/gold_extension_price"
+            app:layout_constraintRight_toLeftOf="@id/gold_extension_gain2"
+            app:layout_constraintTop_toBottomOf="@id/gold_extension_price" />
+
+        <TextView
+            android:id="@+id/gold_extension_gain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/gold_extension_gain1"
+            app:layout_constraintRight_toRightOf="@id/gold_extension_price"
+            app:layout_constraintTop_toBottomOf="@id/gold_extension_price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--迷你黄金延期-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/quotes_layout_2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toRightOf="@+id/quotes_layout_1"
+        app:layout_constraintRight_toLeftOf="@id/quotes_layout_3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mini_gold_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#60666666"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/title2"
+            app:layout_constraintRight_toRightOf="@id/title2"
+            app:layout_constraintTop_toBottomOf="@id/title2" />
+
+        <TextView
+            android:id="@+id/mini_gold_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.5dp"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="19sp"
+            app:layout_constraintLeft_toLeftOf="@id/mini_gold_extension"
+            app:layout_constraintRight_toRightOf="@id/mini_gold_extension"
+            app:layout_constraintTop_toBottomOf="@id/mini_gold_extension" />
+
+        <TextView
+            android:id="@+id/mini_gold_gain1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/mini_gold_price"
+            app:layout_constraintRight_toLeftOf="@id/mini_gold_gain2"
+            app:layout_constraintTop_toBottomOf="@id/mini_gold_price" />
+
+        <TextView
+            android:id="@+id/mini_gold_gain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/mini_gold_gain1"
+            app:layout_constraintRight_toRightOf="@id/mini_gold_price"
+            app:layout_constraintTop_toBottomOf="@id/mini_gold_price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--白银延期-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/quotes_layout_3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toRightOf="@+id/quotes_layout_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/silver_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#60666666"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/title3"
+            app:layout_constraintRight_toRightOf="@id/title3"
+            app:layout_constraintTop_toBottomOf="@id/title3" />
+
+        <TextView
+            android:id="@+id/silver_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.5dp"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="19sp"
+            app:layout_constraintLeft_toLeftOf="@id/silver_extension"
+            app:layout_constraintRight_toRightOf="@id/silver_extension"
+            app:layout_constraintTop_toBottomOf="@id/silver_extension" />
+
+        <TextView
+            android:id="@+id/silver_gain1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/silver_price"
+            app:layout_constraintRight_toLeftOf="@id/silver_gain2"
+            app:layout_constraintTop_toBottomOf="@id/silver_price" />
+
+        <TextView
+            android:id="@+id/silver_gain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/silver_gain1"
+            app:layout_constraintRight_toRightOf="@id/silver_price"
+            app:layout_constraintTop_toBottomOf="@id/silver_price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="30dp"
+        android:background="#E9E9E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/quotes_layout_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="30dp"
+        android:background="#E9E9E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/quotes_layout_2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
